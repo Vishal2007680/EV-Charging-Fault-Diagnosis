@@ -1,0 +1,3 @@
+﻿damaged_connector
+damaged_cable
+damaged_screen

@@ -1,0 +1,8 @@
+
+path: .
+train: train.txt
+names:
+  0: damaged_connector
+  1: damaged_cable
+  2: damaged_screen
+

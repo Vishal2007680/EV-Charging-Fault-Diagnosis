@@ -1,0 +1,47 @@
+=== SPLIT VERIFICATION AUDIT LOG ===
+Random Seed: 42
+Total Records: 225
+Train Count: 157
+Val Count: 34
+Test Count: 34
+
+Distribution in Train:
+component  condition
+charger    broken       15
+           healthy      30
+cord       broken       21
+           healthy      11
+plug       broken       11
+           healthy      11
+screen     broken       18
+           healthy      40
+
+Distribution in Val:
+component  condition
+charger    broken       4
+           healthy      6
+cord       broken       4
+           healthy      3
+plug       broken       3
+           healthy      2
+screen     broken       4
+           healthy      8
+
+Distribution in Test:
+component  condition
+charger    broken       4
+           healthy      6
+cord       broken       4
+           healthy      3
+plug       broken       3
+           healthy      2
+screen     broken       4
+           healthy      8
+
+LEAKAGE CHECKS:
+Train & Val intersection: 0
+Train & Test intersection: 0
+Val & Test intersection: 0
+Active duplicate pairs checked: 2
+All active duplicate pairs confined strictly to Training set: YES
+STATUS: VERIFIED LEAKAGE-FREE

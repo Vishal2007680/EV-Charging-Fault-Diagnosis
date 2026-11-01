@@ -1,0 +1,82 @@
+{
+  "audit_name": "Pre-Integration Verification Audit - Member 2 Module",
+  "audit_timestamp": "2026-10-22T23:59:00+05:30",
+  "artifacts_check": {
+    "models/best_mobilenet_v3.pth": {"exists": true, "size_bytes": 4441674},
+    "models/model_config.json": {"exists": true, "size_bytes": 391},
+    "splits/train_manifest.csv": {"exists": true, "size_bytes": 24099, "rows": 157},
+    "splits/val_manifest.csv": {"exists": true, "size_bytes": 5279, "rows": 34},
+    "splits/test_manifest.csv": {"exists": true, "size_bytes": 5278, "rows": 34},
+    "evaluation_results/test_metrics.json": {"exists": true, "size_bytes": 2195},
+    "evaluation_results/confusion_matrix.png": {"exists": true, "size_bytes": 31450},
+    "evaluation_results/failure_cases.csv": {"exists": true, "size_bytes": 1595, "rows": 9},
+    "experiments/yolo_pilot/data/data.yaml": {"exists": true, "size_bytes": 179}
+  },
+  "recomputed_metrics": {
+    "sample_count": 34,
+    "accuracy": 0.735294,
+    "accuracy_ratio": "25/34",
+    "macro_precision": 0.783654,
+    "macro_recall": 0.707018,
+    "macro_f1": 0.704348,
+    "component_accuracy": 0.705882,
+    "component_accuracy_ratio": "24/34",
+    "broken_class": {
+      "support": 15,
+      "recall": 0.466667,
+      "recall_ratio": "7/15",
+      "precision": 0.875,
+      "precision_ratio": "7/8",
+      "f1": 0.608696
+    },
+    "healthy_class": {
+      "support": 19,
+      "recall": 0.947368,
+      "recall_ratio": "18/19",
+      "precision": 0.692308,
+      "precision_ratio": "18/26",
+      "f1": 0.8
+    },
+    "confusion_matrix": {
+      "tn": 18,
+      "fp": 1,
+      "fn": 8,
+      "tp": 7
+    }
+  },
+  "failure_cases": {
+    "total_misclassifications": 9,
+    "false_positives_healthy_to_broken": 1,
+    "false_negatives_broken_to_healthy": 8,
+    "broken_to_healthy_files": [
+      "charger_broken_0005.jpg",
+      "charger_broken_0017.jpg",
+      "charger_broken_0012.jpg",
+      "cord_broken_0087.jpg",
+      "cord_broken_0082.jpg",
+      "plug_broken_0112.jpg",
+      "plug_broken_0127.jpg",
+      "screen_broken_0149.jpg"
+    ]
+  },
+  "duplicate_grouping_verification": {
+    "total_exact_pairs": 5,
+    "total_near_pairs": 2,
+    "active_in_dataset": 2,
+    "pre_removed_by_member_1": 3,
+    "crossing_split_boundaries": 0,
+    "status": "ZERO_LEAKAGE_CONFIRMED"
+  },
+  "yolo_data_yaml_audit": {
+    "train_path": "images/train",
+    "val_path": "images/train",
+    "status": "NEEDS_SEPARATE_VAL_SPLIT_BEFORE_TRAINING",
+    "action_taken": "CONFIRMED_AND_REPORTED_NO_FILES_MODIFIED"
+  },
+  "inference_api_test_results": {
+    "healthy_test": "PASSED (P_healthy=0.9955)",
+    "broken_test": "PASSED (P_broken=0.9799)",
+    "invalid_path_test": "PASSED (Clean error returned)",
+    "corrupt_file_test": "PASSED (Clean error returned)"
+  }
+}

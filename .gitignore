@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large datasets & raw archives (> 100MB exceeds GitHub limits)
+*.zip
+*.tar.gz
+*.7z
+dataset/flare_segmentation/
+temp_uploads/
+
+# Output PDFs/reports generated during local tests
+*.pdf
+test_pdf.pdf
+sample_work_order.pdf
+sample_charger_healthy.pdf
+sample_cord_broken.pdf
+sample_screen_broken.pdf
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

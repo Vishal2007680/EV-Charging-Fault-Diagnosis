@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Assisted Visual Inspection Report - EVCS-PUNE-HUB-01</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 960px;
+            color: #222;
+            background: #f8f9fa;
+            line-height: 1.6;
+        }
+        .report-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.9em;
+            background: #ffebee;
+            color: #c62828;
+            border: 1px solid #b71c1c;
+        }
+        .hazards-box {
+            background: #ffebee;
+            border: 1px solid #b71c1c;
+            border-radius: 6px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+        }
+        .hazards-box h3 {
+            margin-top: 0;
+            color: #c62828;
+        }
+        h2 {
+            color: #1a237e;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 28px;
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .summary-pre {
+            background: #263238;
+            color: #eceff1;
+            padding: 16px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+        }
+        .disclaimer {
+            background: #fff8e1;
+            border-left: 5px solid #ffb300;
+            padding: 14px 18px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #6d4c41;
+            margin-top: 30px;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+        .meta-item {
+            background: #f1f3f4;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 10px;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 14px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .signoff-box {
+            border: 1px solid #94a3b8;
+            background: #ffffff;
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-card">
+        <div class="header">
+            <h1 style="margin:0 0 8px 0; color: #0d47a1;">⚡ AI-Assisted Visual Inspection Report</h1>
+            <div style="color: #64748b; font-size: 0.95em;">Research Prototype Advisory | Preliminary Optical Screening Only</div>
+
+            <div class="meta-grid">
+                <div class="meta-item"><strong>Report ID:</strong> WO-EVCS-PUNE-HUB-01-20261027-16D953</div>
+                <div class="meta-item"><strong>Station ID:</strong> EVCS-PUNE-HUB-01</div>
+                <div class="meta-item"><strong>Hardware Architecture:</strong> 150kW DC Fast Charger (CCS2 Dual Gun)</div>
+                <div class="meta-item"><strong>Ambient Weather:</strong> Clear / Dry</div>
+                <div class="meta-item"><strong>Timestamp:</strong> 2026-10-27 19:02:37 UTC</div>
+                <div class="meta-item"><strong>Component:</strong> CORD</div>
+                <div class="meta-item"><strong>AI Model Score:</strong> 98.0%</div>
+            </div>
+
+            <div style="margin-top: 16px;">
+                <span class="badge">Visual: POTENTIAL FAULT DETECTED</span>
+                <span class="badge" style="margin-left: 8px;">Severity: CRITICAL</span>
+                <span class="badge" style="margin-left: 8px; background: #e0f2fe; color: #0369a1; border-color: #7dd3fc;">SLA: Not assigned</span>
+            </div>
+            <div style="margin-top: 10px; font-size: 0.9em; color: #555;">
+                <strong>Operational Telemetry:</strong> <code>Operational status unavailable — no telemetry received</code> &nbsp;|&nbsp;
+                <strong>Priority:</strong> IMMEDIATE (Emergency Dispatch < 2-4h)
+            </div>
+        </div>
+
+        
+        
+
+        <h2>1. Observable Evidence & Diagnostic Breakdown</h2>
+        <div class="evidence-grid">
+            <div><strong>Visible Evidence:</strong></div><div>Visible outer-jacket damage, surface tear, or sheath breach is suspected on the charging cable.</div>
+            <div><strong>Possible Explanation:</strong></div><div>Possible mechanical bending fatigue, drive-over strain, or exterior abrasion compromising the protective outer jacket.</div>
+            <div><strong>Unverified Condition:</strong></div><div>Internal conductor continuity, insulation resistance, and dielectric integrity are unverified from optical imagery.</div>
+        </div>
+
+        <h2>2. Safety Hazards & Risk Analysis</h2>
+        <div class="hazards-box">
+            <ul><li>⚠️ POTENTIAL SHOCK / DIELECTRIC HAZARD: Outer jacket damage may compromise insulation protecting high-voltage DC conductors.</li><li>⚠️ ENVIRONMENTAL INGRESS RISK: Outer jacket rupture allows moisture and contaminant penetration into internal cable layers.</li><li>⚠️ NOTE: Conductor continuity, operating voltage, and insulation resistance have not been measured from visual inspection.</li></ul>
+        </div>
+
+        <h2>3. Recommended Personal Protective Equipment (PPE)</h2>
+        <ul><li>🛡️ Appropriate electrical PPE determined by a qualified technician per the site risk assessment and applicable requirements.</li><li>🛡️ Protective eyewear and task-appropriate protective gloves.</li></ul>
+
+        <h2>4. Recommended Standard Operating Procedures (SOP)</h2>
+        
+            <div style="margin-bottom: 12px; padding: 12px; background: #ffffff; border-left: 4px solid #b71c1c; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <strong style="color: #111;">Step 1: Remove from Service</strong> <span style='color:#c62828; font-weight:bold; margin-left:8px;'>[SAFETY CRITICAL]</span><br>
+                <div style="margin-top: 6px; font-size: 0.95em; color: #444; line-height: 1.5;">Prevent further customer use of the visibly damaged charging cable, apply out-of-service notification, and communicate the hazard to station operators.</div>
+            </div>
+            
+            <div style="margin-bottom: 12px; padding: 12px; background: #ffffff; border-left: 4px solid #b71c1c; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <strong style="color: #111;">Step 2: Authorized Electrical Isolation (LOTO)</strong> <span style='color:#c62828; font-weight:bold; margin-left:8px;'>[SAFETY CRITICAL]</span><br>
+                <div style="margin-top: 6px; font-size: 0.95em; color: #444; line-height: 1.5;">Qualified personnel must isolate upstream electrical power following the installation's approved Lockout/Tagout (LOTO) procedure and verify zero energy before physical contact.</div>
+            </div>
+            
+            <div style="margin-bottom: 12px; padding: 12px; background: #ffffff; border-left: 4px solid #b71c1c; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <strong style="color: #111;">Step 3: Detailed Physical & Electrical Inspection</strong> <span style='color:#c62828; font-weight:bold; margin-left:8px;'>[SAFETY CRITICAL]</span><br>
+                <div style="margin-top: 6px; font-size: 0.95em; color: #444; line-height: 1.5;">Inspect cable jacket, strain relief, terminations, and connectors using approved service documentation. Follow the manufacturer's approved service procedure; equipment-specific test values are not available from visual imagery.</div>
+            </div>
+            
+            <div style="margin-bottom: 12px; padding: 12px; background: #ffffff; border-left: 4px solid #b71c1c; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <strong style="color: #111;">Step 4: Repair or Replacement</strong> <span style='color:#555; margin-left:8px;'>[MECHANICAL]</span><br>
+                <div style="margin-top: 6px; font-size: 0.95em; color: #444; line-height: 1.5;">Replace damaged cable assembly with compatible manufacturer-approved parts in accordance with equipment installation specifications.</div>
+            </div>
+            
+            <div style="margin-bottom: 12px; padding: 12px; background: #ffffff; border-left: 4px solid #b71c1c; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <strong style="color: #111;">Step 5: Verification & Commissioning</strong> <span style='color:#c62828; font-weight:bold; margin-left:8px;'>[SAFETY CRITICAL]</span><br>
+                <div style="margin-top: 6px; font-size: 0.95em; color: #444; line-height: 1.5;">Perform all post-repair insulation, bonding, and functional commissioning tests specified by the manufacturer before returning equipment to service.</div>
+            </div>
+            
+
+        <h2>5. Candidate Replacement Parts</h2>
+        <ul><li>🔧 Compatible manufacturer-approved cable assembly (confirm connector type, cable cross-section, and dispenser model before ordering).</li></ul>
+
+        <h2>6. Applicable Technical Standards (Advisory)</h2>
+        <ul><li>📜 IEC 61851-23 (Electric vehicle conductive charging system - Part 23: DC electric vehicle supply equipment)</li><li>📜 IEC 62196-3 (Plugs, socket-outlets, vehicle connectors and vehicle inlets - Part 3: Dimensional compatibility)</li><li>📜 NFPA 70E (Standard for Electrical Safety in the Workplace)</li></ul>
+
+        <h2>7. Grounded Engineering Narrative</h2>
+        <div class="summary-pre">=== AI-ASSISTED VISUAL INSPECTION SUMMARY (RESEARCH PROTOTYPE) ===
+Station Identifier: EVCS-PUNE-HUB-01
+Hardware Architecture: 150kW DC Fast Charger (CCS2 Dual Gun) | Ambient Weather: Clear / Dry
+Visual Inspection Status: POTENTIAL FAULT DETECTED
+Operational Telemetry: Operational status unavailable — no telemetry received
+Assigned Severity Level: CRITICAL
+
+1. OBSERVABLE EVIDENCE & PRELIMINARY HYPOTHESES:
+  • [CORD SUSPECTED DAMAGE] Condition: BROKEN (Model Score: 98.0%, Component Score: 63.3%). Visible: Visible outer-jacket damage, surface tear, or sheath breach is suspected on the charging cable. Hypothesis: Possible mechanical bending fatigue, drive-over strain, or exterior abrasion compromising the protective outer jacket.
+
+2. SAFETY & RELIABILITY HAZARDS:
+  • POTENTIAL SHOCK / DIELECTRIC HAZARD: Outer jacket damage may compromise insulation protecting high-voltage DC conductors.
+  • ENVIRONMENTAL INGRESS RISK: Outer jacket rupture allows moisture and contaminant penetration into internal cable layers.
+  • NOTE: Conductor continuity, operating voltage, and insulation resistance have not been measured from visual inspection.
+
+3. RECOMMENDED STANDARD OPERATING PROCEDURES (SOP):
+  • Step 1 (Remove from Service) [SAFETY CRITICAL]: Prevent further customer use of the visibly damaged charging cable, apply out-of-service notification, and communicate the hazard to station operators.
+  • Step 2 (Authorized Electrical Isolation (LOTO)) [SAFETY CRITICAL]: Qualified personnel must isolate upstream electrical power following the installation's approved Lockout/Tagout (LOTO) procedure and verify zero energy before physical contact.
+  • Step 3 (Detailed Physical & Electrical Inspection) [SAFETY CRITICAL]: Inspect cable jacket, strain relief, terminations, and connectors using approved service documentation. Follow the manufacturer's approved service procedure; equipment-specific test values are not available from visual imagery.
+  • Step 4 (Repair or Replacement) [MECHANICAL]: Replace damaged cable assembly with compatible manufacturer-approved parts in accordance with equipment installation specifications.
+  • Step 5 (Verification & Commissioning) [SAFETY CRITICAL]: Perform all post-repair insulation, bonding, and functional commissioning tests specified by the manufacturer before returning equipment to service.
+
+4. IMPORTANT ENGINEERING SAFETY BOUNDARIES:
+  • This evaluation is an AI-assisted visual screening tool. Optical inspection cannot verify contact resistance, internal conductor insulation integrity, internal heating, or electrical safety compliance. Physical testing by qualified personnel using approved procedures is required prior to equipment re-energization or return to service.</div>
+
+        <h2>8. Qualified Technician Review & Sign-Off</h2>
+        <div class="signoff-box">
+            <p><strong>Technician Name:</strong> ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; <strong>License / Cert ID:</strong> ___________________________</p>
+            <p><strong>Inspection Date:</strong> ____________________ &nbsp;&nbsp;&nbsp;&nbsp; <strong>Approval Signature:</strong> ________________________________</p>
+            <p><strong>Sign-Off Decision:</strong> [  ] Approved for Service &nbsp;&nbsp;&nbsp;&nbsp; [  ] Maintenance Action Required &nbsp;&nbsp;&nbsp;&nbsp; [  ] Decommissioned</p>
+            <p style="font-size:0.85em; color:#64748b; margin-top:8px;"><i>(Note: This section is to be completed manually by qualified personnel upon physical site inspection.)</i></p>
+        </div>
+
+        <h2>9. Mandatory Safety Disclaimer</h2>
+        <div class="disclaimer">
+            <strong>⚠️ MANDATORY SAFETY DISCLAIMER:</strong><br>
+            AI-assisted visual inspection only. This result does not certify electrical safety or confirm internal equipment condition. Damaged charging equipment must be assessed by qualified personnel using approved procedures before being returned to service.
+        </div>
+    </div>
+</body>
+</html>

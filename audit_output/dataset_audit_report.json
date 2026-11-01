@@ -1,0 +1,983 @@
+{
+  "classification": {
+    "total_records": 225,
+    "readable_images": 225,
+    "missing_images": [],
+    "unreadable_images": [],
+    "distribution": {
+      "charger_broken": 23,
+      "charger_healthy": 42,
+      "cord_broken": 29,
+      "cord_healthy": 17,
+      "plug_broken": 17,
+      "plug_healthy": 15,
+      "screen_broken": 26,
+      "screen_healthy": 56
+    },
+    "label_counts": {
+      "1": 95,
+      "0": 130
+    },
+    "min_resolution": [
+      158,
+      416
+    ],
+    "max_resolution": [
+      8064,
+      6048
+    ]
+  },
+  "fault_annotations": {
+    "total_labels": 27,
+    "total_images": 27,
+    "class_counts": {
+      "0": 19,
+      "1": 4,
+      "2": 4
+    },
+    "suspicious_boxes": [
+      {
+        "file": "cord_broken_0068.txt",
+        "box_idx": 0,
+        "notes": [
+          "CLASS_DISCREPANCY: filename has 'cord' but class_id=0 (damaged_connector)"
+        ],
+        "box_info": {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.695819,
+          "y_center": 0.354783,
+          "width": 0.228828,
+          "height": 0.45875,
+          "area_ratio": 0.105,
+          "pixel_box": [
+            1047,
+            150,
+            1458,
+            701
+          ],
+          "notes": [
+            "CLASS_DISCREPANCY: filename has 'cord' but class_id=0 (damaged_connector)"
+          ]
+        }
+      },
+      {
+        "file": "cord_broken_0088.txt",
+        "box_idx": 0,
+        "notes": [
+          "CLASS_DISCREPANCY: filename has 'cord' but class_id=0 (damaged_connector)"
+        ],
+        "box_info": {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.71122,
+          "y_center": 0.39612,
+          "width": 0.160613,
+          "height": 0.09571,
+          "area_ratio": 0.0154,
+          "pixel_box": [
+            946,
+            697,
+            1187,
+            888
+          ],
+          "notes": [
+            "CLASS_DISCREPANCY: filename has 'cord' but class_id=0 (damaged_connector)"
+          ]
+        }
+      },
+      {
+        "file": "screen_broken_0168.txt",
+        "box_idx": 0,
+        "notes": [
+          "LARGE_BOX (>85% image area)"
+        ],
+        "box_info": {
+          "class_id": 2,
+          "class_name": "damaged_screen",
+          "x_center": 0.49751,
+          "y_center": 0.480844,
+          "width": 0.99502,
+          "height": 0.961687,
+          "area_ratio": 0.9569,
+          "pixel_box": [
+            0,
+            0,
+            1019,
+            627
+          ],
+          "notes": [
+            "LARGE_BOX (>85% image area)"
+          ]
+        }
+      }
+    ],
+    "previews_directory": "c:\\VIT\\5th Sem\\EDI\\ProjectWork\\audit_output\\bbox_previews"
+  },
+  "fault_candidates": {
+    "total_records": 115,
+    "readable_count": 115,
+    "missing_count": 0,
+    "missing_files": [],
+    "category_counts": {
+      "damaged_cable": 6,
+      "damaged_connector": 17,
+      "damaged_screen": 4,
+      "normal": 88
+    }
+  },
+  "segmentation": {
+    "total_pairs": 167,
+    "dimension_mismatches": [
+      {
+        "image": "flare_151.jpg",
+        "mask": "flare_151_mask.png",
+        "image_dim": [
+          1280,
+          720
+        ],
+        "mask_dim": [
+          720,
+          1280
+        ]
+      }
+    ]
+  },
+  "duplicates": {
+    "exact_duplicates_count": 5,
+    "exact_duplicates": [
+      {
+        "duplicate": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\plug\\healthy\\plug_healthy_0143.jpg",
+        "original": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\plug\\healthy\\plug_healthy_0142.jpg"
+      },
+      {
+        "duplicate": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0188.jpg",
+        "original": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\charger\\healthy\\charger_healthy_0040.jpg"
+      },
+      {
+        "duplicate": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0190.jpg",
+        "original": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\charger\\healthy\\charger_healthy_0043.jpg"
+      },
+      {
+        "duplicate": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0200.jpg",
+        "original": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0199.jpg"
+      },
+      {
+        "duplicate": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0227.jpg",
+        "original": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0171.jpg"
+      }
+    ],
+    "near_duplicates_count": 2,
+    "near_duplicates": [
+      {
+        "image_1": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\charger\\healthy\\charger_healthy_0040.jpg",
+        "component_1": "charger",
+        "condition_1": "healthy",
+        "image_2": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0188.jpg",
+        "component_2": "screen",
+        "condition_2": "healthy",
+        "hash_distance": "0"
+      },
+      {
+        "image_1": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\charger\\healthy\\charger_healthy_0043.jpg",
+        "component_1": "charger",
+        "condition_1": "healthy",
+        "image_2": "D:\\EV_Charging_AI\\dataset\\processed\\flare_classification\\screen\\healthy\\screen_healthy_0190.jpg",
+        "component_2": "screen",
+        "condition_2": "healthy",
+        "hash_distance": "0"
+      }
+    ]
+  },
+  "bbox_audit_details": [
+    {
+      "stem": "cord_broken_0065",
+      "image_file": "cord_broken_0065.jpg",
+      "image_size": [
+        2000,
+        1500
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "class_name": "damaged_cable",
+          "x_center": 0.598175,
+          "y_center": 0.689467,
+          "width": 0.25175,
+          "height": 0.420933,
+          "area_ratio": 0.106,
+          "pixel_box": [
+            945,
+            719,
+            1448,
+            1350
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_cord_broken_0065.jpg"
+    },
+    {
+      "stem": "cord_broken_0068",
+      "image_file": "cord_broken_0068.jpg",
+      "image_size": [
+        1800,
+        1200
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.695819,
+          "y_center": 0.354783,
+          "width": 0.228828,
+          "height": 0.45875,
+          "area_ratio": 0.105,
+          "pixel_box": [
+            1047,
+            150,
+            1458,
+            701
+          ],
+          "notes": [
+            "CLASS_DISCREPANCY: filename has 'cord' but class_id=0 (damaged_connector)"
+          ]
+        }
+      ],
+      "preview_file": "preview_cord_broken_0068.jpg"
+    },
+    {
+      "stem": "cord_broken_0071",
+      "image_file": "cord_broken_0071.jpg",
+      "image_size": [
+        2268,
+        4032
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "class_name": "damaged_cable",
+          "x_center": 0.523552,
+          "y_center": 0.472716,
+          "width": 0.551521,
+          "height": 0.202971,
+          "area_ratio": 0.1119,
+          "pixel_box": [
+            562,
+            1497,
+            1813,
+            2315
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_cord_broken_0071.jpg"
+    },
+    {
+      "stem": "cord_broken_0085",
+      "image_file": "cord_broken_0085.jpg",
+      "image_size": [
+        547,
+        471
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "class_name": "damaged_cable",
+          "x_center": 0.567587,
+          "y_center": 0.571146,
+          "width": 0.348519,
+          "height": 0.435329,
+          "area_ratio": 0.1517,
+          "pixel_box": [
+            215,
+            166,
+            406,
+            372
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_cord_broken_0085.jpg"
+    },
+    {
+      "stem": "cord_broken_0088",
+      "image_file": "cord_broken_0088.jpg",
+      "image_size": [
+        1500,
+        2000
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.71122,
+          "y_center": 0.39612,
+          "width": 0.160613,
+          "height": 0.09571,
+          "area_ratio": 0.0154,
+          "pixel_box": [
+            946,
+            697,
+            1187,
+            888
+          ],
+          "notes": [
+            "CLASS_DISCREPANCY: filename has 'cord' but class_id=0 (damaged_connector)"
+          ]
+        }
+      ],
+      "preview_file": "preview_cord_broken_0088.jpg"
+    },
+    {
+      "stem": "cord_broken_0091",
+      "image_file": "cord_broken_0091.jpg",
+      "image_size": [
+        259,
+        194
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 1,
+          "class_name": "damaged_cable",
+          "x_center": 0.483069,
+          "y_center": 0.457423,
+          "width": 0.408996,
+          "height": 0.465876,
+          "area_ratio": 0.1905,
+          "pixel_box": [
+            72,
+            44,
+            178,
+            134
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_cord_broken_0091.jpg"
+    },
+    {
+      "stem": "plug_broken_0111",
+      "image_file": "plug_broken_0111.jpg",
+      "image_size": [
+        1200,
+        1600
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.558304,
+          "y_center": 0.627888,
+          "width": 0.213425,
+          "height": 0.153625,
+          "area_ratio": 0.0328,
+          "pixel_box": [
+            542,
+            882,
+            798,
+            1128
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0111.jpg"
+    },
+    {
+      "stem": "plug_broken_0112",
+      "image_file": "plug_broken_0112.jpg",
+      "image_size": [
+        1500,
+        2000
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.55059,
+          "y_center": 0.618812,
+          "width": 0.334247,
+          "height": 0.227725,
+          "area_ratio": 0.0761,
+          "pixel_box": [
+            575,
+            1010,
+            1077,
+            1465
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0112.jpg"
+    },
+    {
+      "stem": "plug_broken_0113",
+      "image_file": "plug_broken_0113.jpg",
+      "image_size": [
+        3024,
+        4032
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.412998,
+          "y_center": 0.360573,
+          "width": 0.257424,
+          "height": 0.179866,
+          "area_ratio": 0.0463,
+          "pixel_box": [
+            860,
+            1091,
+            1638,
+            1816
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0113.jpg"
+    },
+    {
+      "stem": "plug_broken_0114",
+      "image_file": "plug_broken_0114.jpg",
+      "image_size": [
+        625,
+        351
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.522168,
+          "y_center": 0.594886,
+          "width": 0.5372,
+          "height": 0.777066,
+          "area_ratio": 0.4174,
+          "pixel_box": [
+            158,
+            72,
+            494,
+            345
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0114.jpg"
+    },
+    {
+      "stem": "plug_broken_0115",
+      "image_file": "plug_broken_0115.jpg",
+      "image_size": [
+        593,
+        792
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.261981,
+          "y_center": 0.484274,
+          "width": 0.416543,
+          "height": 0.259078,
+          "area_ratio": 0.1079,
+          "pixel_box": [
+            32,
+            281,
+            279,
+            486
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0115.jpg"
+    },
+    {
+      "stem": "plug_broken_0116",
+      "image_file": "plug_broken_0116.jpg",
+      "image_size": [
+        587,
+        678
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.624497,
+          "y_center": 0.781114,
+          "width": 0.751005,
+          "height": 0.280664,
+          "area_ratio": 0.2108,
+          "pixel_box": [
+            146,
+            434,
+            587,
+            625
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0116.jpg"
+    },
+    {
+      "stem": "plug_broken_0117",
+      "image_file": "plug_broken_0117.jpg",
+      "image_size": [
+        475,
+        698
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.506021,
+          "y_center": 0.586941,
+          "width": 0.431621,
+          "height": 0.151819,
+          "area_ratio": 0.0655,
+          "pixel_box": [
+            138,
+            357,
+            343,
+            463
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0117.jpg"
+    },
+    {
+      "stem": "plug_broken_0118",
+      "image_file": "plug_broken_0118.jpg",
+      "image_size": [
+        1440,
+        1920
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.677184,
+          "y_center": 0.358201,
+          "width": 0.529507,
+          "height": 0.278755,
+          "area_ratio": 0.1476,
+          "pixel_box": [
+            594,
+            420,
+            1356,
+            955
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0118.jpg"
+    },
+    {
+      "stem": "plug_broken_0119",
+      "image_file": "plug_broken_0119.jpg",
+      "image_size": [
+        3024,
+        4032
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.48478,
+          "y_center": 0.200031,
+          "width": 0.355122,
+          "height": 0.378797,
+          "area_ratio": 0.1345,
+          "pixel_box": [
+            929,
+            43,
+            2003,
+            1570
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0119.jpg"
+    },
+    {
+      "stem": "plug_broken_0120",
+      "image_file": "plug_broken_0120.jpg",
+      "image_size": [
+        1200,
+        1600
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.548887,
+          "y_center": 0.448759,
+          "width": 0.302508,
+          "height": 0.179531,
+          "area_ratio": 0.0543,
+          "pixel_box": [
+            477,
+            574,
+            840,
+            862
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0120.jpg"
+    },
+    {
+      "stem": "plug_broken_0121",
+      "image_file": "plug_broken_0121.jpg",
+      "image_size": [
+        1200,
+        1200
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.521925,
+          "y_center": 0.340421,
+          "width": 0.343283,
+          "height": 0.333425,
+          "area_ratio": 0.1145,
+          "pixel_box": [
+            420,
+            208,
+            832,
+            609
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0121.jpg"
+    },
+    {
+      "stem": "plug_broken_0122",
+      "image_file": "plug_broken_0122.jpg",
+      "image_size": [
+        1607,
+        1062
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.399197,
+          "y_center": 0.205395,
+          "width": 0.280112,
+          "height": 0.378041,
+          "area_ratio": 0.1059,
+          "pixel_box": [
+            416,
+            17,
+            867,
+            419
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0122.jpg"
+    },
+    {
+      "stem": "plug_broken_0123",
+      "image_file": "plug_broken_0123.jpg",
+      "image_size": [
+        1080,
+        1440
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.477944,
+          "y_center": 0.47742,
+          "width": 0.328815,
+          "height": 0.386687,
+          "area_ratio": 0.1271,
+          "pixel_box": [
+            339,
+            409,
+            694,
+            966
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0123.jpg"
+    },
+    {
+      "stem": "plug_broken_0124",
+      "image_file": "plug_broken_0124.jpg",
+      "image_size": [
+        1836,
+        3264
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.377195,
+          "y_center": 0.423529,
+          "width": 0.322462,
+          "height": 0.179473,
+          "area_ratio": 0.0579,
+          "pixel_box": [
+            397,
+            1089,
+            989,
+            1675
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0124.jpg"
+    },
+    {
+      "stem": "plug_broken_0125",
+      "image_file": "plug_broken_0125.jpg",
+      "image_size": [
+        218,
+        231
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.516995,
+          "y_center": 0.269307,
+          "width": 0.267569,
+          "height": 0.157835,
+          "area_ratio": 0.0422,
+          "pixel_box": [
+            84,
+            44,
+            142,
+            80
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0125.jpg"
+    },
+    {
+      "stem": "plug_broken_0126",
+      "image_file": "plug_broken_0126.jpg",
+      "image_size": [
+        3264,
+        2448
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.521013,
+          "y_center": 0.555288,
+          "width": 0.629599,
+          "height": 0.684824,
+          "area_ratio": 0.4312,
+          "pixel_box": [
+            673,
+            521,
+            2728,
+            2198
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0126.jpg"
+    },
+    {
+      "stem": "plug_broken_0127",
+      "image_file": "plug_broken_0127.jpg",
+      "image_size": [
+        3264,
+        2448
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 0,
+          "class_name": "damaged_connector",
+          "x_center": 0.471307,
+          "y_center": 0.55087,
+          "width": 0.811847,
+          "height": 0.486005,
+          "area_ratio": 0.3946,
+          "pixel_box": [
+            213,
+            754,
+            2863,
+            1943
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_plug_broken_0127.jpg"
+    },
+    {
+      "stem": "screen_broken_0144",
+      "image_file": "screen_broken_0144.jpg",
+      "image_size": [
+        1500,
+        2000
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "class_name": "damaged_screen",
+          "x_center": 0.60936,
+          "y_center": 0.238815,
+          "width": 0.281467,
+          "height": 0.44193,
+          "area_ratio": 0.1244,
+          "pixel_box": [
+            703,
+            36,
+            1125,
+            920
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_screen_broken_0144.jpg"
+    },
+    {
+      "stem": "screen_broken_0149",
+      "image_file": "screen_broken_0149.jpg",
+      "image_size": [
+        2000,
+        1303
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "class_name": "damaged_screen",
+          "x_center": 0.46926,
+          "y_center": 0.583949,
+          "width": 0.21594,
+          "height": 0.625411,
+          "area_ratio": 0.1351,
+          "pixel_box": [
+            723,
+            353,
+            1154,
+            1168
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_screen_broken_0149.jpg"
+    },
+    {
+      "stem": "screen_broken_0164",
+      "image_file": "screen_broken_0164.jpg",
+      "image_size": [
+        4032,
+        2268
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "class_name": "damaged_screen",
+          "x_center": 0.521602,
+          "y_center": 0.480858,
+          "width": 0.714722,
+          "height": 0.74787,
+          "area_ratio": 0.5345,
+          "pixel_box": [
+            662,
+            243,
+            3544,
+            1939
+          ],
+          "notes": []
+        }
+      ],
+      "preview_file": "preview_screen_broken_0164.jpg"
+    },
+    {
+      "stem": "screen_broken_0168",
+      "image_file": "screen_broken_0168.jpg",
+      "image_size": [
+        1024,
+        652
+      ],
+      "image_mode": "RGB",
+      "num_boxes": 1,
+      "boxes": [
+        {
+          "class_id": 2,
+          "class_name": "damaged_screen",
+          "x_center": 0.49751,
+          "y_center": 0.480844,
+          "width": 0.99502,
+          "height": 0.961687,
+          "area_ratio": 0.9569,
+          "pixel_box": [
+            0,
+            0,
+            1019,
+            627
+          ],
+          "notes": [
+            "LARGE_BOX (>85% image area)"
+          ]
+        }
+      ],
+      "preview_file": "preview_screen_broken_0168.jpg"
+    }
+  ]
+}
